@@ -30,9 +30,11 @@ project "yaml-cpp"
 		staticruntime "off"
 
 	filter "configurations:Debug"
+		defines {"YAML_CPP_STATIC_DEFINE"} 
 		runtime "Debug"
 		symbols "on"
 
 	filter "configurations:Release"
+		defines {"YAML_CPP_STATIC_DEFINE"} 
 		runtime "Release"
 		optimize "on"
